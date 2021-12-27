@@ -1,6 +1,7 @@
 const mySecret = process.env['TOKEN']
 // Require the necessary discord.js classes
 const { Client, Intents } = require('discord.js');
+const http = require('http');
 require('discord-reply'); // IMPORTANT: put this before your discord.Client()
 // Create a new client instance
 const client = new Client({ 
@@ -9,6 +10,14 @@ const client = new Client({
     Intents.FLAGS.GUILD_MESSAGES
   ]
   });
+
+http.createServer((req, res) => {
+    res.writeHead(200, {
+        'Content-type': 'text/plain'
+    });
+    res.write('Hey');
+    res.end();
+}).listen(4000);
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
@@ -28,5 +37,4 @@ client.on('messageCreate', async message => {
 });
 
 // Login to Discord with your client's token
-//client.login(process.env.TOKEN);
 client.login(mySecret);
