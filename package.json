@@ -1,16 +1,30 @@
 {
   "name": "mediafixer",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.2.2",
+  "description": "Fixes broken twitter embeds by replying with a reformatted link.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeviSnoot/MediaFixer.git"
+  },
+  "keywords": [
+    "discord",
+    "twitter",
+    "embeds"
+  ],
+  "author": "Yber0 & LeviSnoot",
   "license": "ISC",
   "dependencies": {
-    "discord-reply": "^0.1.2",
-    "discord.js": "^13.4.0"
+    "discord.js": "^14.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/LeviSnoot/MediaFixer/issues"
+  },
+  "homepage": "https://github.com/LeviSnoot/MediaFixer#readme",
+  "devDependencies": {
+    "eslint": "^8.23.1"
   }
 }
