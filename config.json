@@ -1,4 +1,4 @@
 {
-        "token": "your-token-goes-here", // Your bot token from https://discord.com/developers/applications/XXXXXXXXXXXXXXXXXXX/bot
-        "tweetParser": "https://fxtwitter.com/" // This value can be changed to any twitter embed service, for example "https://vxtwitter.com/"
+        "token": "your-token-goes-here",
+        "tweetParser": "https://fxtwitter.com/"
 }
