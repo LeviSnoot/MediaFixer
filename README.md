@@ -38,6 +38,12 @@ Example:
 	
 	"token": "Ysy._94ZUE7oATq9DCyaYr47.iQRJGwysWgP7SwpONUen9YbJZpXV_eG_43MjaYESEoI9UpAr",
 	
+You can set which port the bot runs its http service on using the `port` value. Default is 4000.
+
+Example:
+	
+	"port": "4000",
+	
 You can change which service to use for parsing Twitter and Instagram links. By default fxtwitter and ddinstagram are used, but you can change this to any of your choosing.
 
 Example:
