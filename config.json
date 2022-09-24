@@ -1,4 +1,5 @@
 {
         "token": "your-token-goes-here",
-        "tweetParser": "https://fxtwitter.com/"
+        "tweetParser": "https://fxtwitter.com/",
+        "instaParser": "https://ddinstagram.com/"
 }
