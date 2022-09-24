@@ -1,5 +1,7 @@
 # MediaFixer
 
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FLeviSnoot%2FMediaFixer%2Fbadge%3Fref%3Dmain&style=for-the-badge)](https://actions-badge.atrox.dev/LeviSnoot/MediaFixer/goto?ref=main)
+
 Auto changes links that commonly embed incorrectly (or not at all) on Discord to various embed services, embedding media correctly
 
 ## Prerequisites
