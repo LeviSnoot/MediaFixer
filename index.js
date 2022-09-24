@@ -1,6 +1,6 @@
 // Require the necessary discord.js classes
 const { Client, GatewayIntentBits } = require('discord.js');
-const { token, tweetParser, instaParser } = require('./config.json');
+const { token, port, tweetParser, instaParser } = require('./config.json');
 const http = require('http');
 // Create a new client instance
 const client = new Client({
@@ -15,7 +15,7 @@ http.createServer((req, res) => {
         res.writeHead(200, { 'Content-type': 'text/plain' });
         res.write('Hey');
         res.end();
-}).listen(4000);
+}).listen(port);
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
