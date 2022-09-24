@@ -1,6 +1,6 @@
 {
   "name": "mediafixer",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "Fixes broken twitter embeds by replying with a reformatted link.",
   "main": "index.js",
   "scripts": {
