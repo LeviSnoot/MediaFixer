@@ -27,5 +27,6 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           LINTER_RULES_PATH: ./
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
+          VALIDATE_MARKDOWN: false
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
