@@ -46,11 +46,12 @@ Example:
 	
 	"port": "4000",
 	
-You can change which service to use for parsing Twitter and Instagram links. By default fxtwitter and ddinstagram are used, but you can change this to any of your choosing.
+You can change which service to use for parsing links, simply edit the corresponding values with a service that offers the functionality.
 
 Example:
 
 	"tweetParser": "https://twittpr.com/",
-	"instaParser": "https://ddinstagram.com/"
+	"instaParser": "https://ddinstagram.com/",
+	"tiktokParser": "https://www.vxtiktok.com/"
 	
 It's important the full base url is in the string, like the example above, otherwise you may run into issues.
