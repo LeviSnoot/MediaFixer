@@ -1,6 +1,11 @@
-// Require the necessary discord.js classes
 const { Client, GatewayIntentBits } = require('discord.js');
-const { token, port, tweetParser, instaParser } = require('./config.json');
+const {
+        token,
+        port,
+        tweetParser,
+        instaParser,
+        tiktokParser,
+} = require('./config.json');
 const http = require('http');
 // Create a new client instance
 const client = new Client({
@@ -59,6 +64,26 @@ client.on('messageCreate', async message => {
                 message.suppressEmbeds(true);
 
                 const newmsg = instaParser + instaURL2;
+                message.reply({ content: newmsg, allowedMentions: { repliedUser: false } });
+        }
+});
+
+client.on('messageCreate', async message => {
+        if (message.content.startsWith('https://tiktok.com/')) {
+                const tiktokURL = message.content.substring(19, message.content.length);
+                message.suppressEmbeds(true);
+
+                const newmsg = tiktokParser + tiktokURL;
+                message.reply({ content: newmsg, allowedMentions: { repliedUser: false } });
+        }
+});
+
+client.on('messageCreate', async message => {
+        if (message.content.startsWith('https://www.tiktok.com/')) {
+                const tiktokURL2 = message.content.substring(23, message.content.length);
+                message.suppressEmbeds(true);
+
+                const newmsg = tiktokParser + tiktokURL2;
                 message.reply({ content: newmsg, allowedMentions: { repliedUser: false } });
         }
 });

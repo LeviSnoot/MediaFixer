@@ -2,5 +2,6 @@
         "token": "your-token-goes-here",
         "port": "4000",
         "tweetParser": "https://fxtwitter.com/",
-        "instaParser": "https://ddinstagram.com/"
+        "instaParser": "https://ddinstagram.com/",
+				"tiktokParser": "https://www.vxtiktok.com/"
 }
