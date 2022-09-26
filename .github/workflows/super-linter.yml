@@ -25,6 +25,7 @@ jobs:
         uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: false
+          VALIDATE_JAVASCRIPT_ES: true
           LINTER_RULES_PATH: ./
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
           VALIDATE_MARKDOWN: false
